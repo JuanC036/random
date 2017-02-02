@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Bahiana|Barrio');
 #button-container {
     text-align: center;
 }
 
 h1 {
     text-align: center;
+}
+text{
+    font-family: Barrio;
 }

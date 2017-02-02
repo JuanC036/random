@@ -5,7 +5,8 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+    makeRect(0,0,1000,1000,"white",1)
+    makeCircle(50,20,3,"green",1)
 }
 
 
@@ -13,7 +14,8 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+    makeRect(0,0,1000,1000,"white",1)
+    makeCircle(50,20,3,"blue",1)
 }
 
 
@@ -21,7 +23,22 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+    makeRect(0,0,1000,1000,"white",1)
+    makeRect(0,70,200,50,"blue",0.5)
+    makeCircle(25,25,25,"yellow",1)
+    makeLine(25,45,45,60,"yellow",3)
+    makeLine(39,45,50,52,"yellow",3)
+    makeLine(45,35,57,42,"yellow",3)
+    makeLine(45,20,60,30,"yellow",3)
+    makeRect(50,70,80,10,"brown",1)
+    makeLine(85,71,85,40,"brown",7)
+    makePolygon("81.5,20 81.5,50 100,50","gray",1)
+    makeCircle(120,40,5,"black",1)
+    makeLine(120,40,120,60,"black",3)
+    makeLine(120,60,110,70,"black",3)
+    makeLine(120,60,130,70,"black",3)
+    makeLine(110,50,130,50,"black",3)
+    makeText("SOS Help Me",20,97,20,"sans-serif","orange",1)
 }
 
 
@@ -32,19 +49,19 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var random = Math.random()
     // If the number is less than 0.33, call the function to create your first scene.
-    
-    
-    
+    if(random < 0.33){
+        createFirstScene()
+    }
     // Else, if the number is less than 0.67, call the function to create your second scene.
-    
-    
-    
+    else if(random < 0.67){
+        createSecondScene()
+    }
     // Else, call the function to create your third scene.
-    
-    
-    
+    else{
+        createThirdScene()
+    }
 }
 
 
