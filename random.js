@@ -7,6 +7,7 @@ var namespace = "http://www.w3.org/2000/svg"
 function createFirstScene() {
     makeRect(0,0,1000,1000,"white",1)
     makeCircle(50,20,3,"green",1)
+    makePolygon("110,20 50,30 20,50 60,30", "yellow",1)
 }
 
 
