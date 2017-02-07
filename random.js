@@ -5,9 +5,15 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    makeRect(0,0,1000,1000,"white",1)
-    makeCircle(50,20,3,"green",1)
-    makePolygon("110,20 50,30 20,50 60,30", "yellow",1)
+    makeRect(0,0,1000,1000,"red",1)
+    makeCircle(50,10,4,"green",1)
+    makeLine(50,10,50,25,"green",3)
+    makeLine(50,25,40,30,"green",3)
+    makeLine(50,10,50,25,"green",3)
+    makeLine(60,30,50,25,"green",3)
+    makeLine(40,15,60,15,"green",3)
+    makeText("I love sailing",60,10,10,"Bahiana","orange")
+    makePolygon("10,35 60,35 50,50 20,50", "yellow",1)
 }
 
 
@@ -15,8 +21,12 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    makeRect(0,0,1000,1000,"white",1)
-    makeCircle(50,20,3,"blue",1)
+    makeRect(0,0,1000,1000,"lightblue",1)
+    makeEllipse(70,20,40,10,"gray",0.5)
+    makePolygon("60,11 70,0 80,11 ","gray",0.5)
+    makePolygon("35,20 40,25 45,20 50,25 55,20 60,25 65,20" ,"gray",0.5)  
+    makeEllipse(50,17,15,3,"red",1)
+    makeText("i am robo alien shark",50,50,10,"Barrio","navy",1)
 }
 
 
@@ -39,7 +49,7 @@ function createThirdScene() {
     makeLine(120,60,110,70,"black",3)
     makeLine(120,60,130,70,"black",3)
     makeLine(110,50,130,50,"black",3)
-    makeText("SOS Help Me",20,97,20,"sans-serif","orange",1)
+    makeText("SOS Help Me",20,97,20,"Pangolin","orange",1)
 }
 
 
