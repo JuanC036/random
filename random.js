@@ -12,8 +12,13 @@ function createFirstScene() {
     makeLine(50,10,50,25,"green",3)
     makeLine(60,30,50,25,"green",3)
     makeLine(40,15,60,15,"green",3)
-    makeText("I love sailing",60,10,10,"Bahiana","orange")
     makePolygon("10,35 60,35 50,50 20,50", "yellow",1)
+    var random  = Math.random()
+        if(random < 0.25){
+            makeText("I love sailing",60,10,10,"Bahiana","orange")
+        }else{
+            makeText("I hate sailing",60,10,10,"Bahiana","orange")
+        }
 }
 
 
@@ -25,8 +30,13 @@ function createSecondScene() {
     makeEllipse(70,20,40,10,"gray",0.5)
     makePolygon("60,11 70,0 80,11 ","gray",0.5)
     makePolygon("35,20 40,25 45,20 50,25 55,20 60,25 65,20" ,"gray",0.5)  
-    makeEllipse(50,17,15,3,"red",1)
     makeText("i am robo alien shark",50,50,10,"Barrio","navy",1)
+    var random = Math.random()
+    if(random < 0.5){
+        makeEllipse(50,17,15,3,"red",1)
+    }else{
+        makeEllipse(50,17,15,3,"blue",1)
+    }
 }
 
 
@@ -49,7 +59,12 @@ function createThirdScene() {
     makeLine(120,60,110,70,"black",3)
     makeLine(120,60,130,70,"black",3)
     makeLine(110,50,130,50,"black",3)
-    makeText("SOS Help Me",20,97,20,"Pangolin","orange",1)
+    var random = Math.random()
+    if(random < 0.25){
+        makeText("SOS Help Me",20,97,20,"Pangolin","orange",1)    
+    }else{
+        makeText("Everything is fine",20,97,20,"Pangolin","orange",1)   
+    }
 }
 
 
